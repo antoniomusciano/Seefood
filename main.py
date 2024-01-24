@@ -39,6 +39,9 @@ def on_button_click():
     window.after(2000, lambda: result_label.pack_forget())  # Display the result for 2 seconds and then hide it
     food_selection()
 
+def quit():
+    window.destroy()
+
 # Create the main window
 window = tk.Tk()
 window.title("SeeFood")
@@ -59,7 +62,11 @@ food_selection()
 
 # Create a button
 button = tk.Button(window, text="Final Answer?", command=on_button_click)
-button.place(x=125, y=20)
+button.pack(pady=20)
+
+
+button= tk.Button(window,text="Quit", font=('Comic Sans', 13, 'bold'), command= quit)
+button.pack(pady=50)
 
 # Start the main loop
 window.mainloop()
