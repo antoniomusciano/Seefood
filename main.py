@@ -38,7 +38,7 @@ label.pack()
 picture_get()
 
 # Create a button
-button = tk.Button(window, text="Click Me!", command=picture_get)  # Call picture_get when the button is clicked
+button = tk.Button(window, text="Click Me!")  # Call picture_get when the button is clicked
 button.place(x=125, y=20)
 
 
