@@ -43,7 +43,8 @@ def on_button_click():
 window = tk.Tk()
 window.title("SeeFood")
 window.geometry('300x250')
-window.resizable(False, False)
+window.resizable(True, True)
+window.attributes('-fullscreen', True)
 
 # Create an Entry widget to accept User Input
 e = Entry(window, width=50)
